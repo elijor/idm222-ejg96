@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main_bg: #F4F1DE;
+    --mainred: #E07A5F;
+    --maingreen: #81B29A;
+    --mainblue: #5A6193;
+    --mainnavy: #3D405B;
+    --mainyellow: #F2CC8F;
+
+    --border_rad: 50px 0 50px 0;
+
+    --largetextmob: 3rem;
+    --navtextmob: 2.25rem;
+    --medtextmob: 1.75rem;
+    --smalltextmob: 1.4rem;
+
+    --margintgr: 10vw 0 2.5vw 0;
+    --marginapt: 10vw 0;
+}
+
+@font-face {
+    font-family: OswaldBold;
+    src: url(fonts/Oswald-VariableFont_wght.ttf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald-VariableFont_wght.ttf);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: SemiBoldSSP;
+    src: url(fonts/SourceSansPro-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: ItalicSSP;
+    src: url(fonts/SourceSansPro-Italic.ttf);
+  }
+
+  @font-face {
+    font-family: RegSSP;
+    src: url(fonts/SourceSansPro-Regular.ttf);
+  }
+/* Background Color */
+body {
+    background-color: var(--main_bg);
+    margin: 0;
+}
+section {
+    padding: 0 5%;
+    margin: var(--margintgr);
+}
+/* Shapes */
+.square {
+    min-height: 25vw;
+    min-width: 25vw;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: var(--border_rad);
+    margin: 0 3%;
+    padding: 1rem;
+}
+
+.itemsquare {
+    width:60%;
+    border-radius: var(--border_rad);
+    margin: 0 3%;
+    padding: 60 1rem 1rem 1rem;
+}
+
+/* Colors */
+
+.blue {
+    background-color: var(--mainblue);
+}
+.red {
+    background-color: var(--mainred);
+}
+.green {
+    background-color: var(--maingreen);
+}
+.yellow {
+    background-color: var(--mainyellow);
+}
+.whitetext {
+    color: white;
+}
+/* Fonts */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "OswaldBold";
+    font-size: var(--largetextmob);
+    color: var(--mainnavy);
+    text-align: center;
+    margin: var(--margintgr);
+}
+h2 {
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "SemiBoldSSP";
+    font-size: var(--medtextmob);
+    border-radius: var(--border_rad);
+    padding: 10px 20px;
+    margin: var(--margintgr);
+}
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "ItalicSSP";
+    font-size: var(--medtextmob);
+}
+h4 {
+    /* button */
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "RegSSP";
+    font-size: var(--smalltextmob);
+    background-color: var(--mainnavy);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "RegSSP";
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+/* Flexbox */
+.wrapper {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+
+/* Images */
+.heroimg {
+    max-width: 100%;
+    min-width: 35vw;
+}
+.coverimg {
+    max-width: 60vw;
+}
+
+/* .icon {
+    margin: 2% 0;
+} */
+
+/* nav menu */
+nav {
+    background-color: var(--mainnavy);
+    width:100vw;
+    padding: 0 0 5% 0;
+    /* display: none; */
+}
+
+nav > section {
+    background-color: var(--mainnavy);
+
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+    text-align: center;
+    margin: 5%;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Oswald";
+    font-size: var(--navtextmob);    
+}
