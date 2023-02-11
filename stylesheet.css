@@ -146,21 +146,23 @@ p {
     max-width: 60vw;
 }
 
-/* .icon {
-    margin: 2% 0;
-} */
+
 
 /* nav menu */
 nav {
     background-color: var(--mainnavy);
     width:100vw;
     padding: 0 0 5% 0;
-    /* display: none; */
+    display: none;
+    z-index: 1;
 }
 
-nav > section {
-    background-color: var(--mainnavy);
+.visible {
+    display: block;
+}
 
+.icon {
+ padding: 5% 0 0 5%;
 }
 ul {
     padding: 0;
