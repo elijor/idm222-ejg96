@@ -190,8 +190,8 @@ p {
 }
 .coverimg {
     display: block;
-    max-width: 40vw;
-    margin: 20% auto 10%;
+    max-width: 90%;
+    margin: 15% auto;
 }
 .arrow {
     margin: 0 auto;
