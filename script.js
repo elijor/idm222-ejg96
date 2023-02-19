@@ -1,20 +1,19 @@
 const menu = document.getElementById('menunav');
 const openmenu = document.getElementById('toggleopen');
-const menuexx = document.getElementById('toggleclose')
-// const menuopen = document.getElementById("toggleopen");
-// const menu = document.getElementsByTagName("nav");
+const menuexx = document.getElementById('toggleclose');
 
-
-function togglenavmenu() {
+function opennavmenu() {
+    openmenu.classList.add("invisible");
     menu.classList.add("visible");
     console.log("opened");
 };
 
-function closenavmenu(){
+function closenavmenu() {
+    openmenu.classList.remove("invisible");
     menu.classList.remove('visible');
     console.log("closed");
-}
-;
-openmenu.addEventListener('click', togglenavmenu, false );
+};
+
+openmenu.addEventListener('click', opennavmenu, false );
 menuexx.addEventListener('click', closenavmenu, false );
 

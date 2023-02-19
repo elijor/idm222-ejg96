@@ -19,7 +19,7 @@
     --medtextmob: 1.5rem;
     --smalltextmob: 1.4rem;
 
-    --margintgr: 5vw 0 2.5vw 0;
+    --margintgr: 7.5vw 0 2.5vw 0;
     --marginapt: 10vw 0;
 }
 
@@ -58,7 +58,7 @@ body {
     margin: 0;
 }
 section {
-    position: relative;
+    /* position: static; */
     padding: 0 5%;
     margin: var(--margintgr);
 }
@@ -227,10 +227,9 @@ p {
 }
 
 /* nav menu */
+
 #toggleopen {
-    position: absolute;
-    display: inline;
-    /* padding: 0 0 10px; */
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -240,7 +239,9 @@ nav {
     width: 100vw;
     padding: 0 0 5% 0;
     display: none;
-    z-index: 1;
+}
+.invisible {
+    display: none;
 }
 
 .visible {
