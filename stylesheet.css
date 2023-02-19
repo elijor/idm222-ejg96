@@ -14,7 +14,7 @@
 
     --border_rad: 40px 0 40px 0;
 
-    --largetextmob: 3rem;
+    --largetextmob: 2.8rem;
     --navtextmob: 2.25rem;
     --medtextmob: 1.5rem;
     --smalltextmob: 1.4rem;
@@ -246,6 +246,18 @@ nav {
 
 .visible {
     display: block;
+    animation: fadein .25s ease-in-out 0s normal;
+}
+
+@keyframes fadein {
+    from {
+        transform: translateY(-50%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
 }
 
 .icon {
