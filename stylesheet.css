@@ -58,9 +58,11 @@ body {
     margin: 0;
 }
 section {
+    position: relative;
     padding: 0 5%;
     margin: var(--margintgr);
 }
+
 /* Shapes */
 .square {
     min-height: 20vw;
@@ -73,6 +75,7 @@ section {
 }
 
 .itemsquare {
+    position: relative;
     display: inline-block;
     max-width: 400px;
     width: 80%;
@@ -81,6 +84,9 @@ section {
     margin: 0 0 5vw;
 }
 
+.borderoppo {
+    border-radius: 0 40px 0 40px;
+}
 
 /* Colors */
 
@@ -173,7 +179,8 @@ p {
 }
 
 .right {
-    float:inline-end;
+    float:right;
+    left: 20%;
 
 }
 /* Images */
@@ -220,8 +227,16 @@ p {
 }
 
 /* nav menu */
+#toggleopen {
+    position: absolute;
+    display: inline;
+    /* padding: 0 0 10px; */
+    top: 0;
+    left: 0;
+}
 nav {
     background-color: var(--mainnavy);
+    position: relative;
     width: 100vw;
     padding: 0 0 5% 0;
     display: none;

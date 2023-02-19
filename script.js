@@ -1,12 +1,20 @@
-const menuexit = document.getElementsById("toggleclose");
+const menu = document.getElementById('menunav');
+const openmenu = document.getElementById('toggleopen');
+const menuexx = document.getElementById('toggleclose')
 // const menuopen = document.getElementById("toggleopen");
 // const menu = document.getElementsByTagName("nav");
 
 
-
 function togglenavmenu() {
-    menuexit.classList.toggle("visible");
-    console.log("hello");
+    menu.classList.add("visible");
+    console.log("opened");
 };
 
-togglenavmenu();
+function closenavmenu(){
+    menu.classList.remove('visible');
+    console.log("closed");
+}
+;
+openmenu.addEventListener('click', togglenavmenu, false );
+menuexx.addEventListener('click', closenavmenu, false );
+
