@@ -67,8 +67,8 @@ section {
 .square {
     min-height: 10vw;
     min-width: 10vw;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: var(--border_rad);
     margin: 0 2.5vw;
     padding: 1rem;
@@ -77,7 +77,7 @@ section {
 .itemsquare {
     position: relative;
     display: inline-block;
-    max-width: 400px;
+    max-width: 300px;
     width: 80%;
     border-radius: var(--border_rad);
     padding: 1.5rem;
@@ -181,9 +181,9 @@ p {
 }
 
 .right {
-    float:right;
-    left: 20%;
-
+    float: right;
+    align-self: flex-end;
+    
 }
 /* Images */
 .heroimg {
@@ -193,7 +193,7 @@ p {
 .coverimg {
     display: block;
     max-width: 90%;
-    margin: 15% auto;
+    margin: 5% auto;
 }
 .arrow {
     margin: 0 auto;
@@ -283,34 +283,44 @@ a {
 
 /* Portrait Tablet */
 
-@media screen and (min-width: 500px ) {
+@media screen and (min-width: 680px ) {
 
 .heroimg {
     width: 65%;
     height: 65%;
     display: block;
 }
-.wrapper {
+section.wrapper {
     flex-direction: column;
     width: 25%;
     height: 100;
     margin: 0 0 0 5%;
     align-content: space-between;
-    
 }
+
 section.wrapper div {
     display: block;
-
 }
 h3.square {
     font-size: 2.2rem;
 }
+
 h1 {
     font-size: 4rem;
 }
-.wrapper1 {
+h2 {
+    font-size: 2.4rem;
+}
+.wrapper1, div.wrapper {
     display: flex ;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+}
+p {
+    font-size:  var(--smalltextmob);
+    line-height: 2rem;
+}
+.right {
+    left:0;
 }
 }
