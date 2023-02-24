@@ -16,8 +16,8 @@
 
     --largetextmob: 2.8rem;
     --navtextmob: 2.25rem;
-    --medtextmob: 1.2rem;
-    --smalltextmob: 1.4rem;
+    --medtextmob: 1.4rem;
+    --smalltextmob: 1.2rem;
 
     --margintgr: 7.5vw 0 2.5vw 0;
     --marginapt: 10vw 0;
@@ -118,7 +118,7 @@ h2 {
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "SemiBoldSSP";
-    font-size: var(--medtextmob);
+    font-size: 1.75rem;
     border-radius: var(--border_rad);
     padding: 10px 20px;
     margin: 0 0 5vw;
@@ -333,6 +333,9 @@ p {
 }
 }
 @media screen and (min-width: 1024px ) {
+    div.button h4 {
+        min-width: fit-content;
+    }
     .icon {
         display: none;
     }
@@ -370,10 +373,10 @@ p {
         max-width: 20%;
     }
     .button h4 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
     .arrow {
-        height: 50px;
+        width: 2rem;
     }
     section.wrapper {
         flex-direction: row;
@@ -386,6 +389,39 @@ p {
     }
     .itemsquare {
         max-width: 24%;
+    }
+    #menunav {
+        display: block;
+        padding: 0;
+
+    }
+    ul {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li {
+        margin: 3rem 5rem;
+    }
+    a {
+        display: inline-block;
+        padding: 3rem 5rem;
+        margin: -3rem -5rem;
+    }
+    a:not(.currentpage):hover {
+        color:var(--main_bg);
+        font-weight: bold;
+        background-color: var(--mainblue);
+        padding: 3rem 5rem;
+        /* border-radius: 20px 20px 0 0; */
+    }
+    .currentpage {
+        color:var(--mainnavy);
+        font-weight: bold;
+        background-color: var(--main_bg);
+        padding: 3rem 5rem;
+        /* border-radius: 20px 20px 0 0; */
     }
 }
 @media screen and (min-width: 1440px ) { 
@@ -426,8 +462,8 @@ p {
         margin-bottom: 5%;
     }
     .arrow {
-        width: 20%;
-        height: 20%
+        width: 2.5rem;
+        height: 2.5rem;
     }
     h3.square {
         font-size: 2rem;
