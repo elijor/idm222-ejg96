@@ -191,6 +191,7 @@ p {
 .heroimg {
     max-width: 100%;
     min-width: 35vw;
+    order:1;
 }
 .coverimg {
     display: block;
