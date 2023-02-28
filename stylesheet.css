@@ -402,25 +402,28 @@ p {
         justify-content: space-between;
     }
     li {
-        margin: 3rem 5rem;
+        width: 100%;
+        margin: 0;
+        height: 100%;
     }
     a {
         display: inline-block;
-        padding: 3rem 5rem;
-        margin: -3rem -5rem;
+        padding: 1rem;
+        /* margin: -3rem -5rem; */
+        width: 100%;
     }
     a:not(.currentpage):hover {
         color:var(--main_bg);
         font-weight: bold;
         background-color: var(--mainblue);
-        padding: 3rem 5rem;
+        /* padding: 3rem 5rem; */
         /* border-radius: 20px 20px 0 0; */
     }
     .currentpage {
         color:var(--mainnavy);
         font-weight: bold;
         background-color: var(--main_bg);
-        padding: 3rem 5rem;
+        /* padding: 3rem 5rem; */
         /* border-radius: 20px 20px 0 0; */
     }
 }
