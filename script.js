@@ -17,3 +17,6 @@ function closenavmenu() {
 openmenu.addEventListener('click', opennavmenu, false );
 menuexx.addEventListener('click', closenavmenu, false );
 
+// function opencasestud() {
+//     window.location.href = "`${page}`";
+// }
