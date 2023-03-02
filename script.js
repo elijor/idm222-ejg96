@@ -17,6 +17,7 @@ function closenavmenu() {
 openmenu.addEventListener('click', opennavmenu, false );
 menuexx.addEventListener('click', closenavmenu, false );
 
-// function opencasestud() {
-//     window.location.href = "`${page}`";
-// }
+function openeltaco() {
+    window.location.href = "casestud/eltaco.html";
+
+}
