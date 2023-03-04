@@ -286,6 +286,9 @@ a {
 
 @media screen and (min-width: 680px ) {
 
+.itemsquare {
+    max-width: 300px;
+}
 .heroimg {
     width: 65%;
     height: 65%;
@@ -331,8 +334,14 @@ p {
 .right {
     left:0;
 }
+section {
+    margin: 5% 0;
+}
 }
 @media screen and (min-width: 1024px ) {
+    h2#projects {
+        margin: 4% 0;
+    }
     div.button h4 {
         min-width: fit-content;
     }
@@ -348,14 +357,29 @@ p {
         flex-wrap: wrap;
         max-height: 860px;
         flex-basis: auto;
+
     }
     .about {
+        margin: 0;
+        position: relative;
+        width: 45%;
+        right: 45%;
+    }
+    .aboutpg {
         position: relative;
         padding: 0;
+        /* margin: 5% 0 0; */
+        flex: 0 0 40%;
+        right:117%;
+        width:217%;
+    }
+    .aboutleft {
+        right:0;
         width: 45%;
+        position: relative;
+        padding: 0;
         margin: 0;
         flex: 0 0 40%;
-        right:45%;
     }
     p {
         font-size: 1.4rem;
@@ -364,6 +388,7 @@ p {
         font-size: 2.5rem;
     }
     h2 {
+        margin: 4% 0 2%;
         font-size: 3rem;
     }
     h1 {
@@ -381,7 +406,7 @@ p {
     section.wrapper {
         flex-direction: row;
         margin: 4% 0 0;
-        align-content: space-between;
+        align-content: space-evenly;
         height: 5%; 
         width: 100%;
         flex: 0 0 40%;
@@ -409,37 +434,42 @@ p {
     a {
         display: inline-block;
         padding: 1rem;
-        /* margin: -3rem -5rem; */
         width: 100%;
     }
     a:not(.currentpage):hover {
         color:var(--main_bg);
         font-weight: bold;
         background-color: var(--mainblue);
-        /* padding: 3rem 5rem; */
-        /* border-radius: 20px 20px 0 0; */
     }
     .currentpage {
         color:var(--mainnavy);
         font-weight: bold;
         background-color: var(--main_bg);
-        /* padding: 3rem 5rem; */
-        /* border-radius: 20px 20px 0 0; */
     }
-    .aboutpgrow{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        right:0;
-        width: 100%;
+    .right {
+        float: none;
     }
 }
+@media screen and (min-width: 1200px ) { 
+    .about {
+        margin: 10% 0 0;
+    }
+}
+
+
 @media screen and (min-width: 1440px ) { 
     section {
         margin: 5% auto;
     }
+    h2.red, section.about.vertflex {
+        margin-top: 0;
+    }
     .heroimg {
         width: 33%;
+    }
+    .whatdoido {
+        width: 100%;
+        right: 0;
     }
     .about {
         width: 40%;
