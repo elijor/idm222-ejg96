@@ -121,7 +121,7 @@ h2 {
     font-size: 1.75rem;
     border-radius: var(--border_rad);
     padding: 10px 20px;
-    margin: 0 0 5vw;
+    margin: 6% 0 4.5%
 }
 h3 {
     float: left;
@@ -142,12 +142,14 @@ h4 {
     
 }
 h5 {
-    display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: "OswaldBold";
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: black;
-    padding: .5rem 1rem 0;
+    /* padding: .5rem 1rem 0; */
+    margin: 10% auto 0;
+    text-align: center;
+
 }
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -190,6 +192,10 @@ p {
 .heroimg {
     max-width: 100%;
     min-width: 35vw;
+}
+.caseimg {
+    width: 100%;
+    margin: 5% 0 0;
 }
 .coverimg {
     display: block;
