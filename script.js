@@ -16,11 +16,3 @@ function closenavmenu() {
 
 openmenu.addEventListener('click', opennavmenu, false );
 menuexx.addEventListener('click', closenavmenu, false );
-
-function openeltaco() {
-    window.location.href = "casestud/eltaco.html";
-}
-
-function openstarscholars() {
-    window.location.href = "casestud/starscholars.html";
-}
