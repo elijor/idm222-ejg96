@@ -136,7 +136,7 @@ h4 {
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "RegSSP";
-    font-size: var(--smalltextmob);
+    font-size: 1.2rem;
     color: white;
     margin: 10px 0;
     
@@ -172,7 +172,7 @@ p {
     flex-direction: column;
 }
 
-.button {
+button {
     width:fit-content;
     display: flex;
     flex-wrap: nowrap;
@@ -182,6 +182,7 @@ p {
     background-color: var(--mainnavy);
     padding: 5px 20px;
     border-radius: 50px;
+    border-width: 0;
 }
 
 .right {
@@ -286,6 +287,9 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: "Oswald";
     font-size: var(--navtextmob);    
+}
+button a {
+    font-size: var(--medtextmob);  
 }
 
 /* Portrait Tablet */
