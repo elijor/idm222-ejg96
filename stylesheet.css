@@ -147,7 +147,7 @@ h5 {
     font-size: 1.6rem;
     color: black;
     /* padding: .5rem 1rem 0; */
-    margin: 10% auto 0;
+    margin: 3rem auto 0;
     text-align: center;
 
 }
@@ -156,6 +156,19 @@ p {
     font-family: "RegSSP";
     font-size: 1rem;
     line-height: 1.4rem;
+    margin: 0 0 5vw;
+}
+h5 + p {
+    margin-top: 2.5vw;
+}
+q {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "RegSSP";
+    font-style: italic;
+    color:var(--mainnavy);
+    line-height: 1.4;
+    font-size: 1rem;
+    display: block;
     margin: 0 0 5vw;
 }
 /* Flexbox */
@@ -200,13 +213,11 @@ button {
 }
 .maincaseimg {
     width:100%;
-    position: absolute;
-    top:0;
+    margin-top: -20%;
     z-index: -1;
 }
 .starting {
-    position:relative;
-    margin: 5% 0 0;
+    margin-top:0;
 }
 .coverimg {
     display: block;
@@ -217,18 +228,7 @@ button {
     margin: 0 auto;
     height: 2rem;
 }
-/* .ribbon {
-    z-index: 10;
-    position: relative;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: var(--main_bg);
-    border-radius: 0 0 50px 50px ;
-    top: 0;
-    right: 0;
-} */
+
 .itemheading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: "BoldSSP";
@@ -342,6 +342,10 @@ h1 {
 h2 {
     font-size: 2.4rem;
 }
+h5 {
+    font-size: 2rem;
+
+}
 .wrapper1, div.wrapper {
     display: flex ;
     flex-direction: row;
@@ -359,6 +363,21 @@ section {
 }
 }
 @media screen and (min-width: 1024px ) {
+    .wrapper2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between ;
+    }
+    .wrapper2 > div {
+        width:48%;
+    }
+    .wrapper2 > img {
+        width:31%;
+    }
+    .maincaseimg {
+        margin-top: -5%;
+    }
     h2#projects {
         margin: 4% 0;
     }

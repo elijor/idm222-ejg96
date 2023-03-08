@@ -14,7 +14,7 @@
                 <img id="toggleclose" class="icon" src="../imgs/menuexit.png" alt="close menu icon" />
             <ul>
                 <li>
-                    <a class="currentpage"href="../index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
                     <a href="../index.html#projects">Projects</a>
@@ -29,22 +29,22 @@
         </nav>
     </header>
 <main>
-    <img
-    src="../imgs/eltaco/eltaco_coverimg.png"
-    alt="Mexican-inspired El Taco's yellow, black and white logo"
-    class = "maincaseimg"
-    >
-    <section class="starting">
-        <h1>
-            El Taco
-        </h1>
-        <p>
-            For my user interface design class, we were tasked with redesigning an existing website. I chose El Taco because of its great business presence in the community, while it’s current website was lacking visually.
-        </p>
-        <p>
-            El Taco is a locally owned and operated Mexican-inspired restaurant, serving tacos, burritos, nachos, and other delicious bites in the heart of Drexel University’s Campus in Philadelphia.
-        </p>
-    </section>
+        <img
+        src="../imgs/eltaco/eltaco_coverimg.png"
+        alt="Mexican-inspired El Taco's yellow, black and white logo"
+        class = "maincaseimg"
+        >
+        <section class="starting">
+            <h1>
+                El Taco
+            </h1>
+            <p>
+                For my user interface design class, we were tasked with redesigning an existing website. I chose El Taco because of its great business presence in the community, while it’s current website was lacking visually.
+            </p>
+            <p>
+                El Taco is a locally owned and operated Mexican-inspired restaurant, serving tacos, burritos, nachos, and other delicious bites in the heart of Drexel University’s Campus in Philadelphia.
+            </p>
+        </section>
     <section>
         <h2 class="red">
             Why El Taco?
@@ -60,6 +60,8 @@
         <p>
             El Taco’s existing site consisted of immensely empty space and haphazardly placed content. This site does not represent El Taco’s story and well-deserved reputation for delicious food.
         </p>
+    <div class="wrapper2">
+        <div>
         <h5>
             Homepage
         </h5>
@@ -68,6 +70,8 @@
         alt="El Taco's original homepage with little content, heavy use of white space, and oddly aligned text"
         class = "caseimg"
         >
+        </div>
+        <div>
         <h5>
             Menu
         </h5>
@@ -76,6 +80,8 @@
         alt="El Taco's original menu page with an odd cream background and white space on sides"
         class = "caseimg"
         >
+        </div>
+        <div>
         <h5>
             Promotions
         </h5>
@@ -84,6 +90,8 @@
         alt="El Taco's original promotions page with a heavy white space, unaligned image of party-goers, and centrally condensed information"
         class = "caseimg"
         >
+        </div>
+        <div>
         <h5>
             Contact
         </h5>
@@ -92,6 +100,8 @@
         alt="El Taco's original contact page with a heavy amount of white space"
         class = "caseimg"
         >
+        </div>
+    </div>
     </section>
     <section>
         <h2 class="yellow">
@@ -114,17 +124,21 @@
         <h5>
             Information Architecture
         </h5>
-        <img
-        src="../imgs/eltaco/infoarchmob.png"
-        alt="A structured branch showing the organization of the original site content"
-        class = "caseimg"
-        >
+        <picture>
+            <source media="(min-width: 1024px)" srcset="../imgs/eltaco/infoarch.jpg">
+            <img
+            src="../imgs/eltaco/infoarchmob.png"
+            alt="A structured branch showing the organization of the original site content"
+            class = "caseimg"
+            >
+        </picture>
         <p>
             While the site's information architecture is not lacking as much as its visual design and interface, it could use some improvements, such as a unifying header and footer with consistent contact information.
         </p>
         <h5>
             Visual Hierarchy
         </h5>
+        </section>
         <img
         src="../imgs/eltaco/vishier2.jpg"
         alt="A graphic of El Taco's Homepage with various comments pointing out its inconsistent visual hierarchy"
@@ -135,6 +149,7 @@
         alt="A graphic of El Taco's Homepage with various comments pointing out its inconsistent visual hierarchy"
         class = "caseimg"
         >
+        <section>
         <p>
             Most pages, especially the homepage lack clear visual hierarchy. The user may not know where to look first as there is a strange mashup of font sizes and text color. A more organized and structured approach will give the site much more appeal
         </p>
@@ -158,21 +173,23 @@
         <h5>
             Heuristic Analysis
         </h5>
-        <img
-        src="../imgs/eltaco/OGDesktoph.jpg"
-        alt="A heuristics analysis of the original Desktop site highlighting its strengths and weaknesses"
-        class = "caseimg"
-        >
-        <img
-        src="../imgs/eltaco/OGTableth.jpg"
-        alt="A heuristics analysis of the original tablet site highlighting its strengths and weaknesses"
-        class = "caseimg"
-        >
-        <img
-        src="../imgs/eltaco/OGMobileh.jpg"
-        alt="A heuristics analysis of the original mobile site highlighting its strengths and weaknesses"
-        class = "caseimg"
-        >
+        <div class="wrapper2">
+            <img
+            src="../imgs/eltaco/OGDesktoph.jpg"
+            alt="A heuristics analysis of the original Desktop site highlighting its strengths and weaknesses"
+            class = "caseimg"
+            >
+            <img
+            src="../imgs/eltaco/OGTableth.jpg"
+            alt="A heuristics analysis of the original tablet site highlighting its strengths and weaknesses"
+            class = "caseimg"
+            >
+            <img
+            src="../imgs/eltaco/OGMobileh.jpg"
+            alt="A heuristics analysis of the original mobile site highlighting its strengths and weaknesses"
+            class = "caseimg"
+            >
+        </div>
         <p>
             By instructing users to navigate through the site and asking them questions regarding their opinions on the site's quality. Some of the topics like "search" don't apply to this specific site. This heuristic analysis showed the strengths and weaknesses of the original El Taco's desktop, mobile, and tablet sites. Across all platforms, it is clear that the site lacks attractive and cohesive visual design, accessible and logical navigation, and content quality.
         </p>
@@ -274,96 +291,129 @@
         <h5>
             Initial Wireframe Sketches
         </h5>
-        <img
-        src="../imgs/eltaco/wireframehome.png"
-        alt="a simple black outlined wireframe depicting a sketch of the homepage"
-        class = "caseimg"
-        >
-        <img
-        src="../imgs/eltaco/wireframeabout.png"
-        alt="a simple black outlined wireframe depicting a sketch of the about page"
-        class = "caseimg"
-        >
-        <img
-        src="../imgs/eltaco/wireframecontact.png"
-        alt="a simple black outlined wireframe depicting a sketch of the contact page"
-        class = "caseimg"
-        >
+        <div class="wrapper2">
+            <img
+            src="../imgs/eltaco/wireframehome.png"
+            alt="a simple black outlined wireframe depicting a sketch of the homepage"
+            class = "caseimg"
+            >
+            <img
+            src="../imgs/eltaco/wireframeabout.png"
+            alt="a simple black outlined wireframe depicting a sketch of the about page"
+            class = "caseimg"
+            >
+            <img
+            src="../imgs/eltaco/wireframecontact.png"
+            alt="a simple black outlined wireframe depicting a sketch of the contact page"
+            class = "caseimg"
+            >
+        </div>
         <p>
             While the final product was very different from the sketches, these preliminary explorations supported the final iterations.
         </p>
         <h5>
             Final Design - Desktop
         </h5>
-        <img
-        src="../imgs/eltaco/desktopfinalhomepage.jpg"
-        alt="a brightly colored, finalized homepage for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/desktopfinalmenu.jpg"
-        alt="a brightly colored, finalized menu page for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/desktopfinalcontact.jpg"
-        alt="a brightly colored, finalized contact page for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/desktopfinalpromos.jpg"
-        alt="a brightly colored, finalized promotions page for el taco"
-        class="caseimg"
-        >
+        <div class="wrapper2">
+            <div>
+                <img
+                src="../imgs/eltaco/desktopfinalhomepage.jpg"
+                alt="a brightly colored, finalized homepage for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/desktopfinalmenu.jpg"
+                alt="a brightly colored, finalized menu page for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/desktopfinalcontact.jpg"
+                alt="a brightly colored, finalized contact page for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/desktopfinalpromos.jpg"
+                alt="a brightly colored, finalized promotions page for el taco"
+                class="caseimg"
+                >
+            </div>
+        </div>
         <h5>
             Final Design - Tablet
         </h5>
-        <img
-        src="../imgs/eltaco/tabletfinalhomepage.jpg"
-        alt="a brightly colored, finalized homepage for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/tabletfinalmenu.jpg"
-        alt="a brightly colored, finalized menu page for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/tabletfinalcontact.png"
-        alt="a brightly colored, finalized contact page for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/tabletfinalpromos.png"
-        alt="a brightly colored, finalized promotions page for el taco"
-        class="caseimg"
-        >
+        <div class="wrapper2">
+            <div>
+                <img
+                src="../imgs/eltaco/tabletfinalhomepage.jpg"
+                alt="a brightly colored, finalized homepage for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/tabletfinalmenu.jpg"
+                alt="a brightly colored, finalized menu page for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/tabletfinalcontact.png"
+                alt="a brightly colored, finalized contact page for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/tabletfinalpromos.png"
+                alt="a brightly colored, finalized promotions page for el taco"
+                class="caseimg"
+                >
+            </div>
+        </div>
         <h5>
             Final Design - Mobile
         </h5>
-        <img
-        src="../imgs/eltaco/mobilefinalhomepage.png"
-        alt="a brightly colored, finalized homepage for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/mobilefinalmenu.jpg"
-        alt="a brightly colored, finalized menu page for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/mobilefinalcontact.png"
-        alt="a brightly colored, finalized contact page for el taco"
-        class="caseimg"
-        >
-        <img
-        src="../imgs/eltaco/mobilefinalpromos.png"
-        alt="a brightly colored, finalized promotions page for el taco"
-        class="caseimg"
-        >
+        <div class="wrapper2">
+            <div>
+                <img
+                src="../imgs/eltaco/mobilefinalhomepage.png"
+                alt="a brightly colored, finalized homepage for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/mobilefinalmenu.jpg"
+                alt="a brightly colored, finalized menu page for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/mobilefinalcontact.png"
+                alt="a brightly colored, finalized contact page for el taco"
+                class="caseimg"
+                >
+            </div>
+            <div>
+                <img
+                src="../imgs/eltaco/mobilefinalpromos.png"
+                alt="a brightly colored, finalized promotions page for el taco"
+                class="caseimg"
+                >
+            </div>
+        </div>
         <h5>
             Final Heuristics Comparison
         </h5>
+        <div class=wrapper2>
         <img
         src="../imgs/eltaco/finalheurdesktop.png"
         alt="Orange and blue lines showing that the redesigned desktop site has improved compared to the orginal site "
@@ -379,6 +429,7 @@
         alt="Orange and blue lines showing that the redesigned mobile site has improved compared to the orginal site "
         class="caseimg"
         >
+    </div>
     </section>
 </main>
     <script src="../script.js"></script>
