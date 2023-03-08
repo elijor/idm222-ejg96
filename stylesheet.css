@@ -121,7 +121,7 @@ h2 {
     font-size: 1.75rem;
     border-radius: var(--border_rad);
     padding: 10px 20px;
-    margin: 6% 0 4.5%
+    margin: 0 0 2rem;
 }
 h3 {
     float: left;
@@ -151,15 +151,22 @@ h5 {
     text-align: center;
 
 }
+h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Oswald";
+    font-size: 1.4rem;
+    color: var(--mainblue);
+    margin: 2rem 0 1rem;
+}
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "RegSSP";
     font-size: 1rem;
     line-height: 1.4rem;
-    margin: 0 0 5vw;
+    margin: 0 0 2rem;
 }
 h5 + p {
-    margin-top: 2.5vw;
+    margin-top: 2.5rem;
 }
 q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -169,7 +176,7 @@ q {
     line-height: 1.4;
     font-size: 1rem;
     display: block;
-    margin: 0 0 5vw;
+    margin: 0 0 2rem;
 }
 /* Flexbox */
 .wrapper {
@@ -207,9 +214,9 @@ button {
     max-width: 100%;
     min-width: 35vw;
 }
-.caseimg {
+.caseimg, .caseimgsmaller {
     width: 100%;
-    margin: 5% 0 0;
+    margin: 1rem 0 0;
 }
 .maincaseimg {
     width:100%;
@@ -244,6 +251,18 @@ button {
     border-radius: 0 50px 50px 0;
     margin-left: -1.5rem;
 
+}
+
+p + .caseimg {
+    margin: 1rem 0;
+}
+
+ol li {
+    text-align: left;
+    margin: 1rem 0;
+}
+ol {
+    padding: 0;
 }
 
 /* nav menu */
@@ -375,6 +394,10 @@ section {
     .wrapper2 > img {
         width:31%;
     }
+    .caseimgsmaller {   
+        width: 60%;
+        margin: 0 0 0 20%;
+    }
     .maincaseimg {
         margin-top: -5%;
     }
@@ -427,7 +450,6 @@ section {
         font-size: 2.5rem;
     }
     h2 {
-        margin: 4% 0 2%;
         font-size: 3rem;
     }
     h1 {
@@ -534,11 +556,9 @@ section {
     }
     p {
         font-size: 1rem;
-        margin: 0 0 5% 0;
     }
     h2 {
         font-size: 2.5rem;
-        margin-bottom: 5%;
     }
     .arrow {
         width: 2.5rem;
