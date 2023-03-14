@@ -73,6 +73,10 @@ section {
     padding: .75rem;
 }
 
+source {
+    width:100%;
+}
+
 .itemsquare {
     position: relative;
     display: inline-block;
