@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Home-EJGDesign</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
@@ -27,5 +27,30 @@
                 </li>
             </ul>
         </nav>
+        <section>
+            <h1>
+                Contact Me!
+            </h1>
+            <div>
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="Name" name="Name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="Email" name="email" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <br>
+                    <input type="text" id="Message" name="message" rows="6" maxlength="3000" required>
+                    <br>
+                    <button type="submit" id="fcf-button">Send</button>
+
+                </form>
+
+            </div>
+        </section>
     </header>
+    <script src="script.js"></script>
 </body>
