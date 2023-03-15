@@ -36,20 +36,23 @@
                 Leave me a message below
             </h2> -->
         </section>
-        <section>
+        <section class="maxwidth">
             <div class="conwrap">
-                <div>
+                <div class="less">
                     <img class="max600" src="imgs/contactill.svg"> 
+                    <div class="max600 icongroup">
+                        <div class="wrapper">
+                          <img onclick="location.href='mailto:ejg96@drexel.edu'" class="icons" src="imgs/emailicon.svg"> 
+                          <img onclick="window.open('http://www.linkedin.com/in/eli-jordan-goldberg/')" target="_blank" class="icons" src="imgs/linkedinicon.svg">
+                          <img onclick="window.open('https://www.behance.net/elijgold')" target="_blank" class="icons" src="imgs/behanceicon.svg">
+                      </div>
                 </div>
-                <div class="max600">
-                  <div class="wrapper">
-                    <img class="icons" src="imgs/emailicon1.svg"> 
-                    <img class="icons" src="imgs/linkedinicon1.svg">
-                    <img class="icons" src="imgs/behanceicon1.svg">
+                
                 </div>
-                </div>
-            <div class="order2">
+            <div class="more">
                 <form id="contactform" action="https://getform.io/f/2ec10f24-749d-4cf7-b70a-823443e73e6d" method="POST">
+                    <h5 class="formtitle">Send Me a Message</h5>
+                    <br>
                     <label for="name">Name:</label>
                     <br>
                     <input type="text" id="Name" name="Name" required>
