@@ -139,7 +139,6 @@ h4 {
     font-size: 1.2rem;
     color: white;
     margin: 10px 0;
-    
 }
 h5 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -178,6 +177,69 @@ q {
     display: block;
     margin: 0 0 2rem;
 }
+
+/* Contact  */
+
+.conwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.icons {
+    width:25%;
+    min-height:100px;
+    height:100%;
+}
+
+/* Form */
+form {
+    background-color: var(--mainyellow);
+    padding: 2.5rem;
+    width:100%;
+    max-width: 600px;
+    border-radius: 40px 0 40px 0 ;
+    margin: 0 auto;
+}
+
+form input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "RegSSP";
+    font-size: 1.25rem;
+    width:100%;
+    margin: .5rem 0 2rem 0;
+    height: 2rem;
+    border-style: none;
+
+}
+form label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "RegSSP";
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+}
+
+#Message {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "RegSSP";
+    font-size: 1.25rem;
+    border-style: none;
+    max-height: 200px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: .5rem 0 2rem 0;
+}
+
+#submitbutton {
+    display:block;
+    margin: 0 auto;
+    padding: 2.5% 5%;
+    width: fit-content;
+    font-size: 1.5rem;
+
+}
+
 /* Flexbox */
 .wrapper {
     display: flex;
@@ -243,7 +305,6 @@ button {
     font-size: var(--medtextmob);
 }
 
-
 .itemtrait {
     background-color: var(--main_bg);
     padding: 1rem 1rem 1rem 3rem;
@@ -255,6 +316,13 @@ button {
 
 p + .caseimg {
     margin: 1rem 0;
+}
+
+.max600 {
+    display: block;
+    margin: 0 auto;
+    width:100%;
+    max-width:600px;
 }
 
 ol li {
@@ -382,6 +450,14 @@ section {
 }
 }
 @media screen and (min-width: 1024px ) {
+    .max600 {
+        max-width: 500px;
+    }
+
+    .order2 {
+        order:2;
+    }
+    
     .wrapper2 {
         display: flex;
         flex-direction: row;
@@ -510,6 +586,11 @@ section {
     }
     .right {
         float: none;
+    }
+
+    .conwrap {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 @media screen and (min-width: 1200px ) { 

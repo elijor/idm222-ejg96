@@ -27,30 +27,46 @@
                 </li>
             </ul>
         </nav>
+    </header>
         <section>
             <h1>
-                Contact Me!
+                Contact Me
             </h1>
-            <div>
-                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <!-- <h2 class="red">
+                Leave me a message below
+            </h2> -->
+        </section>
+        <section>
+            <div class="conwrap">
+                <div>
+                    <img class="max600" src="imgs/contactill.svg"> 
+                </div>
+                <div class="max600">
+                  <div class="wrapper">
+                    <img class="icons" src="imgs/emailicon1.svg"> 
+                    <img class="icons" src="imgs/linkedinicon1.svg">
+                    <img class="icons" src="imgs/behanceicon1.svg">
+                </div>
+                </div>
+            <div class="order2">
+                <form id="contactform" action="https://getform.io/f/2ec10f24-749d-4cf7-b70a-823443e73e6d" method="POST">
                     <label for="name">Name:</label>
                     <br>
                     <input type="text" id="Name" name="Name" required>
                     <br>
                     <label for="email">Email:</label>
                     <br>
-                    <input type="email" id="Email" name="email" required>
+                    <input type="email" id="Email" name="Email" required>
                     <br>
                     <label for="message">Message:</label>
                     <br>
-                    <input type="text" id="Message" name="message" rows="6" maxlength="3000" required>
+                    <textarea type="text" id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
                     <br>
-                    <button type="submit" id="fcf-button">Send</button>
-
+                    <button type="submit" value="Send" class="whitetext" id="submitbutton">Send</button>
                 </form>
-
             </div>
+        </div>
         </section>
-    </header>
+
     <script src="script.js"></script>
 </body>
