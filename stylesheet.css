@@ -348,6 +348,24 @@ ol li {
     text-align: left;
     margin: 1rem 0;
 }
+
+.caselist {
+    display: block;
+    border-radius: var(--border_rad);
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--mainyellow);
+    /* background-color: var(--mainyellow); */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 500px
+}
+
+.caselist li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "RegSSP";
+}
+
 ol {
     padding: 0;
 }
