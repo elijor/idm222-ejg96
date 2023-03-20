@@ -20,7 +20,7 @@
     --smalltextmob: 1.2rem;
 
     --margintgr: 7.5vw 0 2.5vw 0;
-    --marginapt: 10vw 0;
+    --marginapt: 4rem 0;
 }
 
 @font-face {
@@ -60,10 +60,33 @@ body {
 section {
     /* position: static; */
     padding: 0 5%;
-    margin: var(--marginapt);
+    margin: 0 0 3rem;
 }
 .maxwidth {
     max-width: 1440px;
+}
+
+/* Grid */
+
+.maingrid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: fit-content 
+}
+
+section {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.titlehead {
+    grid-row-start: 1;
+}
+
+.whoami {
+    grid-row-start: 2;
+}
+#projectssec {
+    grid-row-start: 3;
 }
 
 /* Shapes */
@@ -73,15 +96,13 @@ section {
     max-width: 400px;
     max-height: 400px;
     border-radius: var(--border_rad);
-    margin: 0 2vw;
     padding: .75rem;
 }
 
 .itemsquare {
     position: relative;
     display: inline-block;
-    width: 80%;
-    max-width: 250px;
+    max-width: 600px;
 
     border-radius: var(--border_rad);
     padding: 1.5rem;
@@ -119,7 +140,7 @@ h1 {
     font-size: var(--largetextmob);
     color: var(--mainnavy);
     text-align: center;
-    margin: var(--margintgr);
+    margin: 0 0 1rem;
 }
 h2 {
     display: inline-block;
@@ -128,7 +149,7 @@ h2 {
     font-size: 1.75rem;
     border-radius: var(--border_rad);
     padding: 10px 20px;
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
 }
 h3 {
     float: left;
@@ -171,6 +192,11 @@ p {
     line-height: 1.8rem;
     margin: 0 0 2rem;
 }
+
+.visifbig {
+    display: none;
+}
+
 h5 + p {
     margin-top: 2.5rem;
 }
@@ -260,12 +286,14 @@ form label {
     margin: 0 auto 3rem;
 }
 /* Flexbox */
-.wrapper {
+.wrapper, .wrapperwords {
+    column-gap: 5%;
     display: flex;
     width:100%;
     padding: 0;
     justify-content: space-between;
     align-content: center;
+    margin-top: 5vw;
 }
 
 .vertflex {
@@ -307,6 +335,12 @@ button {
 .starting {
     margin-top:0;
 }
+
+.linediv {
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
 .coverimg {
     display: block;
     max-width: 90%;
@@ -426,12 +460,18 @@ button a {
     font-size: var(--medtextmob);  
 }
 
+@media screen and (min-width: 580px ) {
+    h3.square {
+        padding: 2rem 1.25rem;
+    }
+}
+
 /* Portrait Tablet */
 
 @media screen and (min-width: 680px ) {
 
 .itemsquare {
-    max-width: 300px;
+    max-width: 46%;
 }
 .heroimg {
     width: 65%;
@@ -439,22 +479,30 @@ button a {
     display: block;
 
 }
-section.wrapper {
+
+.wrapperwords {
     flex-direction: column;
     width: 25%;
+    align-content: space-between;
+    margin-top: 0;
+}
+
+.wrapper {
+    flex-direction: column;
+    /* width: 25%; */
     height: 100;
-    margin: 0 0 0 5%;
     align-content: space-between;
 }
 
-section.wrapper div {
+.wrapper div {
     display: block;
 }
 h3.square {
-    font-size: 2.2rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.25rem;
 }
 .about {
     margin-left:0;
@@ -471,20 +519,19 @@ h5 {
 
 }
 .wrapper1, div.wrapper {
+    margin-top: 0;
     display: flex ;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 p {
     font-size:  var(--smalltextmob);
     line-height: 2rem;
 }
-.right {
+/* .right {
     left:0;
-}
-section {
-    margin: 5% 0;
-}
+} */
 
 .less {
     justify-content: space-between;
@@ -493,6 +540,36 @@ section {
 
 }
 @media screen and (min-width: 1024px ) {
+    /* Grid */
+    
+    .linediv {
+        display: none;
+    }
+
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25% ;
+        grid-template-rows: fit-content 
+    }
+    
+    section {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .titlehead {
+        grid-row-start: 1;
+    }
+    
+    .whoami {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+    }
+    #projectssec {
+        grid-row-start: 3;
+    }
+
     .max600 {
         max-width: 500px;
     }
@@ -516,9 +593,6 @@ section {
     .maincaseimg {
         margin-top: -5%;
     }
-    h2#projects {
-        margin: 4% 0;
-    }
     div.button h4 {
         min-width: fit-content;
     }
@@ -539,8 +613,7 @@ section {
     .about {
         margin: 0;
         position: relative;
-        width: 45%;
-        right: 45%;
+        /* right: 45%; */
     }
     .aboutpg {
         position: relative;
@@ -567,6 +640,7 @@ section {
     }
     h2 {
         font-size: 3rem;
+        margin: 0 0 2rem;
     }
     h1 {
         font-size: 5rem;
@@ -580,17 +654,25 @@ section {
     .arrow {
         width: 2rem;
     }
-    section.wrapper {
+   .wrapper {
         flex-direction: row;
         margin: 4% 0 0;
         align-content: space-evenly;
-        height: 5%; 
         width: 100%;
         flex: 0 0 40%;
         justify-content: stretch;
+        column-gap: 0;
     }
+
+    .wrapperwords {
+        flex-direction: row;
+        align-content: space-between ;
+        width: 100%;
+        margin: 2rem 0 0;
+    }
+
     .itemsquare {
-        max-width: 24%;
+        max-width: 23%;
     }
     #menunav {
         display: block;
@@ -623,9 +705,9 @@ section {
         font-weight: bold;
         background-color: var(--main_bg);
     }
-    .right {
+    /* .right {
         float: none;
-    }
+    } */
    .more {
     width: 45%;
    }
@@ -647,6 +729,11 @@ section {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    h3.square {
+        font-size: 1.8rem;
+        padding: 4rem 2rem;
+
+    }
 }
 
 @media screen and (min-width: 1100px ) { 
@@ -654,35 +741,41 @@ section {
         max-width: 450px;
 
     }
-
+    .whoami {
+        padding: 0 10% 0 5%;
+    }
+    h3.square {
+        font-size: 2rem;
+    }
 }
-@media screen and (min-width: 1200px ) { 
-    .about {
-        margin: 10% 0 0;
+@media screen and (min-width: 1240px ) { 
+    .heroimg {
+        max-width:50%;
+    }
+    .wrapperwords {
+        width: 47.5%;
+        margin-left: 2.5%;
+    }
+    .wrapper1 {
+        flex-direction: row ;
+        align-items: baseline;
+    }
+    h3.square {
+        font-size: 2rem;
+        padding: 2rem 1rem;
     }
 }
 
 
 @media screen and (min-width: 1440px ) { 
-    section {
-        margin: 5% auto;
-    }
-    h2.red, section.about.vertflex {
-        margin-top: 0;
-    }
-    .heroimg {
-        width: 33%;
-    }
+    /* section {
+        margin: 0 0 6rem;
+    } */
     .whatdoido {
         width: 100%;
         right: 0;
     }
-    .about {
-        width: 40%;
-        height:60%;
-        right: auto; 
-        order:2;
-    }
+
     section.wrapper {
         justify-content: stretch;
         align-content: stretch;
@@ -690,6 +783,7 @@ section {
         height:40%;
         order:3;
     }
+
     h3.blue.square {
         margin-left: 0;
     }
@@ -700,7 +794,7 @@ section {
         font-size: 7rem ;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     h2 {
         font-size: 2.5rem;
@@ -709,9 +803,7 @@ section {
         width: 2.5rem;
         height: 2.5rem;
     }
-    h3.square {
-        font-size: 2rem;
-    }
+
     .about.vertflex {
         justify-content: stretch;
         align-content: stretch;
@@ -719,5 +811,18 @@ section {
     }
     .wrapper1 {
         max-height: 600px;
+    }
+    #projectssec {
+        margin: 5% 0 0;
+    }
+}
+@media screen and (min-width: 1600px ) { 
+    #projectssec {
+        margin: 12% 0 0;
+    }
+}
+@media screen and (min-width: 1750px ) { 
+    .visifbig {
+        display: block;
     }
 }
