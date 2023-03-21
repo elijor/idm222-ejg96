@@ -74,6 +74,12 @@ section {
     grid-template-rows: fit-content 
 }
 
+.flexcontain {
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+}
+
 section {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -192,6 +198,9 @@ p {
     line-height: 1.8rem;
     margin: 0 0 2rem;
 }
+.firstabout p {
+    margin-bottom: 0;
+}
 
 .visifbig {
     display: none;
@@ -229,6 +238,10 @@ q {
 
 .icons:hover {
     transform: scale(1.1);
+}
+
+section:first-of-type {
+    margin: 0 0 3rem;
 }
 
 /* Form */
@@ -473,11 +486,16 @@ button a {
 .itemsquare {
     max-width: 46%;
 }
+
+
 .heroimg {
     width: 65%;
-    height: 65%;
+    /* height: 65%; */
     display: block;
-
+}
+.flexcontain section .heroimg {
+    max-width: 100%;
+    width: 100%;
 }
 
 .wrapperwords {
@@ -542,6 +560,23 @@ p {
 @media screen and (min-width: 1024px ) {
     /* Grid */
     
+    .flexcontain section:first-of-type {
+        width:50%;
+        padding: 0 2.5% 0 5%;
+    }
+
+    .flexcontain section img {
+        width:100%;
+    }
+
+    .firstabout {
+        width:50%;
+        padding: 0 5% 0 2.5%;
+    }
+    /* .whatdoido {
+        width:50%;
+    } */
+
     .linediv {
         display: none;
     }
@@ -561,6 +596,10 @@ p {
         grid-row-start: 1;
     }
     
+    /* .vertflex div {
+        width: 50%;
+    } */
+
     .whoami {
         grid-column-start: 3;
         grid-column-end: 5;
@@ -603,6 +642,9 @@ p {
         width: 50%;
         flex: 0 0 100%;
     }
+    .flexcontain section .heroimg {
+        max-width: 100%;
+    }
     .wrapper1 {
         flex-direction: column;
         flex-wrap: wrap;
@@ -620,8 +662,6 @@ p {
         padding: 0;
         /* margin: 5% 0 0; */
         flex: 0 0 40%;
-        right:117%;
-        width:217%;
     }
     .aboutleft {
         right:0;
@@ -752,6 +792,9 @@ p {
     .heroimg {
         max-width:50%;
     }
+    .flexcontain section .heroimg {
+        max-width: 100%;
+    }
     .wrapperwords {
         width: 47.5%;
         margin-left: 2.5%;
@@ -771,10 +814,10 @@ p {
     /* section {
         margin: 0 0 6rem;
     } */
-    .whatdoido {
+    /* .whatdoido {
         width: 100%;
         right: 0;
-    }
+    } */
 
     section.wrapper {
         justify-content: stretch;
