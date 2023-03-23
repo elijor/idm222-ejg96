@@ -28,29 +28,66 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>
-            El Taco
-        </h1>
-    </section>
-<main class="flexcontain">
-    <section>
-        <img
-        src="../imgs/eltaco/eltaco_coverimg1.png"
-        alt="Mexican-inspired El Taco's yellow, black and white logo"
-        class = "heroimg bordercut">
-    </section>
-        <section class="firstabout">
-            <h2 class="yellow">
-                Overview
-            </h2>
-            <p>
+
+<section>
+    <h1>
+        El Taco
+    </h1>
+</section>
+<main class="maingrid">
+<section class="titlehead">
+<div class="wrapper1">
+       <img class="bordercut heroimg" src="../imgs/eltaco/eltaco_coverimg1.png"
+       alt="Mexican-inspired El Taco's yellow, black and white logo"/>
+       <div class="wrapperwords">
+       <div>
+           <h3 class="green square">
+               User Interface
+           </h3>
+       </div>
+       <div>
+           <h3 class="red square borderoppo">
+               Graphic Design
+           </h3>
+       </div>
+       <div>
+           <h3 class="yellow square">
+                User Research
+           </h3>
+       </div>
+   </div>
+   </div>
+</section>
+<section class="whoami">
+   <img src="../imgs/divider1.svg" class="linediv">
+       <div class="about vertflex">
+           <div>
+               <h2 class="yellow">
+                   Overview
+               </h2>
+           </div>
+           <div>
+               <p>
                 For my user interface design class, we were tasked with redesigning an existing website. I chose El Taco because of its great business presence in the community, while it’s current website was lacking visually.
-            </p>
-            <p>
+               </p>
+               <p>
                 El Taco is a locally owned and operated Mexican-inspired restaurant, serving tacos, burritos, nachos, and other delicious bites in the heart of Drexel University’s Campus in Philadelphia.
-            </p>
-        </section>
+                </p>
+           </div>
+           <div class="visifbig">
+            <div>
+                <h2 class="green">
+                   Main Concepts
+                </h2>
+            </div>
+            <div>
+                <p>
+                    My redesign included created mobile, desktop, and tablet versions of the El Taco site, as well as getting feedback from users on how the redeisgn compares to the original. I utilzied heuristic analysis and interviews in my user research. I also used Figma and the Adobe creative suite to create designs for the user interface mockups.
+                </p>
+            </div>
+            </div>
+   <img src="../imgs/divider2.svg" class="linediv">
+   </section>
     <section>
         <h2 class="red">
             Why El Taco?
@@ -66,48 +103,13 @@
         <p>
             El Taco’s existing site consisted of immensely empty space and haphazardly placed content. This site does not represent El Taco’s story and well-deserved reputation for delicious food.
         </p>
-    <div class="wrapper2">
-        <div>
-        <h5>
-            Homepage
-        </h5>
-        <img
-        src="../imgs/eltaco/originalhomepage.jpg"
-        alt="El Taco's original homepage with little content, heavy use of white space, and oddly aligned text"
-        class = "caseimg"
-        >
-        </div>
-        <div>
-        <h5>
-            Menu
-        </h5>
-        <img
-        src="../imgs/eltaco/originalmenu.jpg"
-        alt="El Taco's original menu page with an odd cream background and white space on sides"
-        class = "caseimg"
-        >
-        </div>
-        <div>
-        <h5>
-            Promotions
-        </h5>
-        <img
-        src="../imgs/eltaco/originalpromos.jpg"
-        alt="El Taco's original promotions page with a heavy white space, unaligned image of party-goers, and centrally condensed information"
-        class = "caseimg"
-        >
-        </div>
-        <div>
-        <h5>
-            Contact
-        </h5>
-        <img
-        src="../imgs/eltaco/originalcontact.jpg"
-        alt="El Taco's original contact page with a heavy amount of white space"
-        class = "caseimg"
-        >
-        </div>
-    </div>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="../imgs/eltaco/OGdesktopsitetab.png">
+            <img
+            alt="El Taco's original homepage, promo page, contact page, and menu with little content, heavy use of white space, and oddly aligned text"
+            src="../imgs/eltaco/OGdesktopsitemob.png"
+            class = "caseimg">
+        </picture>
     </section>
     <section>
         <h2 class="yellow">
@@ -145,16 +147,14 @@
             Visual Hierarchy
         </h5>
         </section>
-        <img
-        src="../imgs/eltaco/vishier2.jpg"
-        alt="A graphic of El Taco's Homepage with various comments pointing out its inconsistent visual hierarchy"
-        class = "caseimg"
-        >
-        <img
-        src="../imgs/eltaco/vishier.jpg"
-        alt="A graphic of El Taco's Homepage with various comments pointing out its inconsistent visual hierarchy"
-        class = "caseimg"
-        >
+        <picture>
+            <source media="(min-width: 1024px)" srcset="../imgs/eltaco/vishierdesk.png"> 
+            <img
+            src="../imgs/eltaco/vishiermob.png"
+            alt="A graphic of El Taco's Homepage with various comments pointing out its inconsistent visual hierarchy"
+            class = "caseimg fullwidthmob"
+            >
+        </picture>
         <section>
         <p>
             Most pages, especially the homepage lack clear visual hierarchy. The user may not know where to look first as there is a strange mashup of font sizes and text color. A more organized and structured approach will give the site much more appeal
@@ -223,7 +223,7 @@
         <img
         src="../imgs/eltaco/restaurantimg.jpeg"
         alt="an photograph of the interior of el taco's physical restaurant with string lights, tables, chairs, and a chalkboard with menu items"
-        class = "caseimg"
+        class = "caseimg maximg"
         >
     </section>
     <section>
@@ -245,7 +245,7 @@
         <img
         src= "../imgs/eltaco/OGeltacofooter.png"
         alt= "a footer displaying copyright 2021 el taco llc information"
-        class = "caseimg"
+        class = "caseimg maximg"
         >
         <p>
             Lacking footer with simple copyright information and nothing else. This footer could be used to add consistency to every page with relevant information.
@@ -256,7 +256,7 @@
         <img
         src= "../imgs/eltaco/OGeltacoheader.png"
         alt= "Five navigation buttons with relatively small font, el tacos logo, and four social media icon links"
-        class = "caseimg"
+        class = "caseimg maximg"
         >
         <p>
             The current navigation menu is hard to use, see, and can be replaced with a more efficient menu bar.
@@ -283,7 +283,7 @@
         <img
         src= "../imgs/eltaco/finalcolorscheme.png"
         alt= "blocks of colors separated into primary, secondary, and tertiary colors with hexcodes . A navy blue and warm yellow being the primary colors of the color scheme"
-        class = "caseimg"
+        class = "caseimg maximg"
         >
         <p>
             A warm yellow and dark navy (Primary)
@@ -320,102 +320,35 @@
         <h5>
             Final Design - Desktop
         </h5>
-        <div class="wrapper2">
-            <div>
-                <img
-                src="../imgs/eltaco/desktopfinalhomepage.jpg"
-                alt="a brightly colored, finalized homepage for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/desktopfinalmenu.jpg"
-                alt="a brightly colored, finalized menu page for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/desktopfinalcontact.jpg"
-                alt="a brightly colored, finalized contact page for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/desktopfinalpromos.jpg"
-                alt="a brightly colored, finalized promotions page for el taco"
-                class="caseimg"
-                >
-            </div>
-        </div>
+        <picture>
+            <source media="(min-width: 680px)" srcset="../imgs/eltaco/deskredestab.png">
+            <img
+            alt="a brightly colored, finalized homepage, promos page, contact page, and menu for el taco's desktop version"
+            src="../imgs/eltaco/deskredesmob.png"
+            class = "caseimg">
+        </picture>
         <h5>
             Final Design - Tablet
         </h5>
-        <div class="wrapper2">
-            <div>
-                <img
-                src="../imgs/eltaco/tabletfinalhomepage.jpg"
-                alt="a brightly colored, finalized homepage for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/tabletfinalmenu.jpg"
-                alt="a brightly colored, finalized menu page for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/tabletfinalcontact.png"
-                alt="a brightly colored, finalized contact page for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/tabletfinalpromos.png"
-                alt="a brightly colored, finalized promotions page for el taco"
-                class="caseimg"
-                >
-            </div>
-        </div>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="../imgs/eltaco/tabredesdesk.png">
+            <source media="(min-width: 680px)" srcset="../imgs/eltaco/tabredestab.png">
+            <img
+            alt="a brightly colored, finalized homepage, promos page, contact page, and menu for el taco's tablet version"
+            src="../imgs/eltaco/tabredesmob.png"
+            class = "caseimg">
+        </picture>
         <h5>
             Final Design - Mobile
         </h5>
-        <div class="wrapper2">
-            <div>
-                <img
-                src="../imgs/eltaco/mobilefinalhomepage.png"
-                alt="a brightly colored, finalized homepage for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/mobilefinalmenu.jpg"
-                alt="a brightly colored, finalized menu page for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/mobilefinalcontact.png"
-                alt="a brightly colored, finalized contact page for el taco"
-                class="caseimg"
-                >
-            </div>
-            <div>
-                <img
-                src="../imgs/eltaco/mobilefinalpromos.png"
-                alt="a brightly colored, finalized promotions page for el taco"
-                class="caseimg"
-                >
-            </div>
-        </div>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="../imgs/eltaco/mobredesdesk.png">
+            <source media="(min-width: 680px)" srcset="../imgs/eltaco/mobredestab.png">
+            <img
+            alt="a brightly colored, finalized homepage, promos page, contact page, and menu for el taco's mobile version"
+            src="../imgs/eltaco/mobredesmob.png"
+            class = "caseimg">
+        </picture>
         <h5>
             Final Heuristics Comparison
         </h5>
@@ -438,6 +371,5 @@
     </div>
     </section>
 </main>
-    <script src="../script.js"></script>
+<script src="../script.js"></script>
 </body>
-

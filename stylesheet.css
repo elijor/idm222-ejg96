@@ -63,6 +63,8 @@ section {
     margin: 0 0 3rem;
 }
 .maxwidth {
+    display: block;
+    margin: 0 auto;
     max-width: 1440px;
 }
 
@@ -78,6 +80,9 @@ section {
     display: flex;
     direction: row;
     flex-wrap: wrap;
+}
+.flexcontain section, .maingrid section {
+    height: fit-content;
 }
 
 section {
@@ -96,6 +101,11 @@ section {
 }
 
 /* Shapes */
+.bordercut {
+    border-radius: var(--border_rad);
+
+}
+
 .square {
     min-height: 10vw;
     min-width: 10vw;
@@ -192,11 +202,13 @@ h6 {
     margin: 2rem 0 1rem;
 }
 p {
+    display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "RegSSP";
     font-size: 1.2rem;
     line-height: 1.8rem;
-    margin: 0 0 2rem;
+    max-width: 1024px;
+    margin: 0 auto 2rem;
 }
 .firstabout p {
     margin-bottom: 0;
@@ -207,8 +219,13 @@ p {
 }
 
 h5 + p {
-    margin-top: 2.5rem;
+    margin-top: .5rem;
 }
+
+picture + p, img + p {
+    margin-top: 1.5rem;
+}
+
 q {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "RegSSP";
@@ -217,7 +234,8 @@ q {
     line-height: 1.4;
     font-size: 1rem;
     display: block;
-    margin: 0 0 2rem;
+    max-width: 1024px;
+    margin: 0 auto 2rem;
 }
 
 /* Contact  */
@@ -332,13 +350,20 @@ button {
     align-self: flex-end;
 }
 /* Images */
+.fullwidthmob {
+    min-width: 100vw;
+}
+.maximg {
+    display: block;
+    max-width: 750px
+}
 .heroimg {
     max-width: 100%;
     min-width: 35vw;
 }
 .caseimg, .caseimgsmaller {
     width: 100%;
-    margin: 1rem 0 0;
+    margin: 1rem auto 0;
 }
 .maincaseimg {
     width:100%;
@@ -557,7 +582,7 @@ p {
 
 
 }
-@media screen and (min-width: 1024px ) {
+@media screen and (min-width: 1024px ) { 
     /* Grid */
     
     .flexcontain section:first-of-type {
@@ -648,7 +673,7 @@ p {
     .wrapper1 {
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 860px;
+        /* max-height: 860px; */
         flex-basis: auto;
 
     }
@@ -852,18 +877,18 @@ p {
         align-content: stretch;
         height:50%;
     }
-    .wrapper1 {
+    /* .wrapper1 {
         max-height: 600px;
-    }
-    #projectssec {
+    } */
+    /* #projectssec {
         margin: 5% 0 0;
-    }
+    } */
 }
-@media screen and (min-width: 1600px ) { 
+/* @media screen and (min-width: 1600px ) { 
     #projectssec {
         margin: 12% 0 0;
     }
-}
+} */
 @media screen and (min-width: 1750px ) { 
     .visifbig {
         display: block;
