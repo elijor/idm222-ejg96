@@ -239,7 +239,12 @@ q {
     max-width: 1024px;
     margin: 0 auto 2rem;
 }
-
+.video {
+    max-width:425px;
+    width: 100%;
+    min-width:310px;
+    min-height: 760px;
+}
 ol.starlist {
     display: block;
     margin: 0 auto 2rem;
@@ -364,6 +369,10 @@ button {
     align-self: flex-end;
 }
 /* Images */
+.fullwidth {
+    grid-column-start:1;
+    grid-column-end: 5;
+}
 .fullwidthmob {
     min-width: 100vw;
 }
