@@ -16,7 +16,7 @@
 
     --largetextmob: 2.8rem;
     --navtextmob: 2.25rem;
-    --medtextmob: 1.4rem;
+    --medtextmob: 1.1rem;
     --smalltextmob: 1.2rem;
 
     --margintgr: 7.5vw 0 2.5vw 0;
@@ -195,11 +195,13 @@ h5 {
 
 }
 h6 {
+    display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: "Oswald";
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--mainblue);
-    margin: 2rem 0 1rem;
+    margin: 2rem auto 1rem;
+    text-align: center;
 }
 p {
     display: block;
@@ -232,12 +234,24 @@ q {
     font-style: italic;
     color:var(--mainnavy);
     line-height: 1.4;
-    font-size: 1rem;
+    font-size: 1.4rem;
     display: block;
     max-width: 1024px;
     margin: 0 auto 2rem;
 }
 
+ol.starlist {
+    display: block;
+    margin: 0 auto 2rem;
+    width:fit-content;
+}
+
+ol.starlist li {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Oswald";
+    font-size: 1.5rem;
+}
 /* Contact  */
 
 .conwrap {
@@ -353,15 +367,15 @@ button {
 .fullwidthmob {
     min-width: 100vw;
 }
-.maximg {
+/* .maximg {
     display: block;
     max-width: 750px
-}
+} */
 .heroimg {
     max-width: 100%;
     min-width: 35vw;
 }
-.caseimg, .caseimgsmaller {
+.caseimg {
     width: 100%;
     margin: 1rem auto 0;
 }
@@ -405,11 +419,11 @@ button {
 
 }
 
-p + .caseimg {
+/* p + .caseimg {
     margin: 1rem 0;
-}
+} */
 
-.max600 {
+.maximg {
     display: block;
     margin: 0 auto;
     width:100%;
@@ -504,6 +518,12 @@ button a {
     }
 }
 
+@media screen and (min-width: 500px ) {
+    h3.square {
+        font-size: 1.4rem;
+    }
+ }
+
 /* Portrait Tablet */
 
 @media screen and (min-width: 680px ) {
@@ -555,10 +575,10 @@ h1 {
     font-size: 4rem;
 }
 h2 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
 }
 h5 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 
 }
 .wrapper1, div.wrapper {
@@ -649,10 +669,6 @@ p {
     }
     .wrapper2 > img {
         width:31%;
-    }
-    .caseimgsmaller {   
-        width: 60%;
-        margin: 0 0 0 20%;
     }
     .maincaseimg {
         margin-top: -5%;
