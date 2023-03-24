@@ -100,6 +100,17 @@ section {
     grid-row-start: 3;
 }
 
+.skillwrapper {
+    width:100%;
+    display: flex;
+    row-gap: 2.5%;
+    column-gap: 2.5%;;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skillwrapper div {
+    margin-bottom: 2.5%;
+}
 /* Shapes */
 .bordercut {
     border-radius: var(--border_rad);
@@ -270,7 +281,7 @@ ol.starlist li {
     flex-direction: column;
     justify-content: space-between;
     row-gap: 3rem;
-
+    margin-bottom: 5rem;
 }
 
 .icons {
@@ -338,9 +349,18 @@ form label {
 
 }
 
-.less img.max600 {
+.contact, form, .icongroup {
+    max-width: 600px;
+    width: 100%;
+    display: block;
     margin: 0 auto 3rem;
 }
+.icongroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
 /* Flexbox */
 .wrapper, .wrapperwords {
     column-gap: 5%;
@@ -370,6 +390,11 @@ button {
     border-width: 0;
 }
 
+button:hover {
+    box-shadow:0px 0px 0px 3px #3D405B inset;
+    background-color: var(--mainblue);
+}
+
 .right {
     float: right;
     align-self: flex-end;
@@ -382,10 +407,6 @@ button {
 .fullwidthmob {
     min-width: 100vw;
 }
-/* .maximg {
-    display: block;
-    max-width: 750px
-} */
 .heroimg {
     max-width: 100%;
     min-width: 35vw;
@@ -434,9 +455,6 @@ button {
 
 }
 
-/* p + .caseimg {
-    margin: 1rem 0;
-} */
 
 .maximg {
     display: block;
@@ -553,7 +571,6 @@ button a {
 
 .heroimg {
     width: 65%;
-    /* height: 65%; */
     display: block;
 }
 .flexcontain section .heroimg {
@@ -570,7 +587,6 @@ button a {
 
 .wrapper {
     flex-direction: column;
-    /* width: 25%; */
     height: 100;
     align-content: space-between;
 }
@@ -636,9 +652,6 @@ p {
         width:50%;
         padding: 0 5% 0 2.5%;
     }
-    /* .whatdoido {
-        width:50%;
-    } */
 
     .linediv {
         display: none;
@@ -659,9 +672,6 @@ p {
         grid-row-start: 1;
     }
     
-    /* .vertflex div {
-        width: 50%;
-    } */
 
     .whoami {
         grid-column-start: 3;
@@ -670,10 +680,6 @@ p {
     }
     #projectssec {
         grid-row-start: 3;
-    }
-
-    .max600 {
-        max-width: 500px;
     }
     
     .wrapper2 {
@@ -719,7 +725,6 @@ p {
     .aboutpg {
         position: relative;
         padding: 0;
-        /* margin: 5% 0 0; */
         flex: 0 0 40%;
     }
     .aboutleft {
@@ -804,9 +809,6 @@ p {
         font-weight: bold;
         background-color: var(--main_bg);
     }
-    /* .right {
-        float: none;
-    } */
    .more {
     width: 45%;
    }
@@ -836,10 +838,7 @@ p {
 }
 
 @media screen and (min-width: 1100px ) { 
-    .icongroup {
-        max-width: 450px;
 
-    }
     .whoami {
         padding: 0 10% 0 5%;
     }
@@ -864,19 +863,12 @@ p {
     }
     h3.square {
         font-size: 2rem;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
     }
 }
 
 
 @media screen and (min-width: 1440px ) { 
-    /* section {
-        margin: 0 0 6rem;
-    } */
-    /* .whatdoido {
-        width: 100%;
-        right: 0;
-    } */
 
     section.wrapper {
         justify-content: stretch;
@@ -911,18 +903,9 @@ p {
         align-content: stretch;
         height:50%;
     }
-    /* .wrapper1 {
-        max-height: 600px;
-    } */
-    /* #projectssec {
-        margin: 5% 0 0;
-    } */
+
 }
-/* @media screen and (min-width: 1600px ) { 
-    #projectssec {
-        margin: 12% 0 0;
-    }
-} */
+
 @media screen and (min-width: 1750px ) { 
     .visifbig {
         display: block;
