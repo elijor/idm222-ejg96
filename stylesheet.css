@@ -186,7 +186,7 @@ h3 {
     margin: 0;
     text-align: center;
 }
-h4 {
+button {
     /* button */
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -697,7 +697,7 @@ p {
     .maincaseimg {
         margin-top: -5%;
     }
-    div.button h4 {
+    div.button {
         min-width: fit-content;
     }
     .icon {
