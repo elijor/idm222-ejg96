@@ -108,6 +108,19 @@ section {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.awardwrapper .card {
+    display:block;
+    min-width: 371px;
+    margin-bottom: 5%; 
+}
+
+.awardwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
 .skillwrapper div {
     margin-bottom: 2.5%;
 }
